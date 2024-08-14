@@ -1,0 +1,134 @@
+*{
+  font-family: "inter",sans-serif;
+}
+.logo img{
+  height: 25px;
+  width:  144px;
+  padding: 36px 26px;
+
+}
+.Navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF7ED;
+  height: 60px;
+  margin-top: -10px;
+  
+  
+}
+.Navbar a{
+  text-decoration: none;  
+}
+.links{
+  padding: 35px 45px;
+  height: 23px;
+  width: 117px;
+  margin-left: auto;
+}
+.links a{
+ margin-right: 10px;
+ color: #4D4D4D;
+}
+.links a:hover{
+  text-decoration: underline;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF7ED;
+  font-family: "Inter", sans-serif;
+}
+/*home*/
+.Home--content{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),url("./components/images/homeBG.png");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  color: white;
+
+
+
+
+}
+.Home--content >h1{
+  padding: 85px 24px;
+  line-height: 42px;
+  font-weight: 700;
+
+  height: 23px;
+}
+.Home--content p{
+ 
+
+ margin-top: 0;
+  line-height: 24px;
+  padding: 1px 24px;
+  /* border: 1px pink solid; */
+  height: 100px;
+  width: 450px;
+
+}
+.Home--content a{
+
+  display: block;
+  height: 30px;
+  width: 450px;
+  background-color: #FF8C38;
+  color: #FFF7ED;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 25px;
+  padding-top: 10px;
+}
+.Footer{
+  height: 74px;
+  background-color: #252525;
+  color:#AAAAAA;
+ text-align: center;
+ padding:10px 40px ;
+}
+.About--content img{
+  margin-top: 10px ;
+
+}
+.About--content h1{
+ padding: 20px 26px;
+ width: 500px;
+ font-weight: bold;
+ font-size:  32px; ;
+
+}
+.About--content p{
+  padding: 0px 23px;
+  width: 500px;
+  font-weight: 600;
+ }
+ .About--explore{
+  width: 400px;
+  height: 178px;
+  background-color:#FFCC8D ;
+  border-radius:5px ;
+  padding: 20px 40px;
+  margin-left: 20px;
+  font-size: small;
+  margin-bottom: 30px;
+ }
+ .About--explore a{
+  background-color: #161616;
+  text-decoration: none;
+  color: #FFF7ED;
+  display: block;
+  width: 170px;
+  height: 19px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+  padding: 18px 12px;
+ }
+
+
