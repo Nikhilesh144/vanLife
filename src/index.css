@@ -12,7 +12,7 @@
   justify-content: space-between;
   background-color: #FFF7ED;
   height: 60px;
-  margin-top: -10px;
+
 
   
 }
@@ -20,9 +20,9 @@
   text-decoration: none;  
 }
 .links{
-  padding: 35px 45px;
+  padding: 35px 15px;
   height: 23px;
-  width: 117px;
+
   margin-left: auto;
 }
 .links a{
@@ -30,7 +30,7 @@
  color: #4D4D4D;
 }
 .links .active{
-  margin-right: 10px;
+  margin-right: 5px;
   color: #000000;
   text-decoration: underline;
  }
@@ -50,7 +50,7 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height:400px;
+  height: 90%;
   color: white;
 
   margin-top: 20px;
@@ -87,7 +87,7 @@ html, body {
   text-align: center;
   border-radius: 5px;
   font-weight: bold;
-  width: 380px;
+  
   margin:20px  ;
   padding:5px;
 
