@@ -9,7 +9,7 @@ import Vans from './components/vans.jsx'
 import '../server.js';
 import Description from './components/Description.jsx'
 import Layout from './components/Layout.jsx'
-import Host from './components/host/host.jsx'
+import Host from './components/host/Host.jsx'
 import Income from './components/host/Income.jsx'
 import Reviews from './components/host/Reviews.jsx'
 import HostLayout from './components/host/hostLayout.jsx'
