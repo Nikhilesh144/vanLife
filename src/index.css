@@ -9,7 +9,7 @@
 }
 .Navbar{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background-color: #FFF7ED;
   height: 60px;
 
@@ -50,9 +50,8 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90%;
+  height: 400px;
   color: white;
-
   margin-top: 20px;
 
 
