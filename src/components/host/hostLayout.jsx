@@ -1,12 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Navbar2 from "./Navbar2";
 
-import HostNav from "./hostNav";
 export default function HostLayout(){
     return(
 
         <>
-        <HostNav/>
+        <Navbar2/>
         <Outlet/>
         </>
     )
