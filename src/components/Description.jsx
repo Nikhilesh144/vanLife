@@ -23,9 +23,9 @@ export default function Description()
             <p className={`van-type ${details.type}`}> {details.type}</p>
             <h1>{details.name}</h1>
             <h4>{details.price}$/day</h4>
-            <h5 className="description">
-                {details.description}
-            </h5>
+            <div className="description">
+               <p> {details.description} </p>
+            </div>
 
                     <Link className="rent-button">Rent This Van</Link>
             </div> :<h2>...Loading</h2>}
