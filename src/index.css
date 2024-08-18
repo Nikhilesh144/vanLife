@@ -102,27 +102,29 @@ html, body {
 }
 .About--content img{
   margin-top: 10px ;
+  width: 100%;
 
 }
 .About--content h1{
  padding: 20px 26px;
- width: 500px;
+ /* width: 500px; */
  font-weight: bold;
  font-size:  32px; ;
 
 }
 .About--content p{
   padding: 0px 23px;
-  width: 500px;
+  /* width: 500px; */
   font-weight: 600;
  }
  .About--explore{
-  width: 400px;
+  /* width: 400px; */
   height: 178px;
   background-color:#FFCC8D ;
   border-radius:5px ;
   padding: 20px 40px;
   margin-left: 20px;
+  margin-right: 20px;
   font-size: small;
   margin-bottom: 30px;
  }
