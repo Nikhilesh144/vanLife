@@ -13,7 +13,7 @@
   background-color: #FFF7ED;
   height: 60px;
   margin-top: -10px;
-  
+
   
 }
 .Navbar a{
@@ -29,6 +29,11 @@
  margin-right: 10px;
  color: #4D4D4D;
 }
+.links .active{
+  margin-right: 10px;
+  color: #000000;
+  text-decoration: underline;
+ }
 .links a:hover{
   text-decoration: underline;
 }
@@ -45,8 +50,10 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height:400px;
   color: white;
+
+  margin-top: 20px;
 
 
 
@@ -67,22 +74,23 @@ html, body {
   padding: 1px 24px;
   /* border: 1px pink solid; */
   height: 100px;
-  width: 450px;
+  width: 380px;
 
 }
 .Home--content a{
 
-  display: block;
+  display: block; 
   height: 30px;
-  width: 450px;
   background-color: #FF8C38;
   color: #FFF7ED;
   text-decoration: none;
   text-align: center;
   border-radius: 5px;
   font-weight: bold;
-  margin-left: 16px;
-  padding-top: 10px;
+  width: 380px;
+  margin:20px  ;
+  padding:5px;
+
 
 }
 .Footer{
@@ -91,7 +99,7 @@ html, body {
   color:#AAAAAA;
  text-align: center;
  padding:10px 40px ;
- margin-top: 50px;
+
 }
 .About--content img{
   margin-top: 10px ;
@@ -258,4 +266,18 @@ html, body {
   display: block;
   padding: 10px 20px;
   text-align: center;
+}
+.host-nav{
+  padding-top: 40px;
+  padding-left: 20px;
+}
+.host-nav a{
+  text-decoration: none;
+  margin-right: 10px;
+  color: #4D4D4D
+
+}
+.host-nav a:active{
+  color: #161616;
+  text-decoration: underline;
 }

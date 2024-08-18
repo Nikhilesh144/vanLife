@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function About(){
     return(
         <div>
-            <Navbar/>   
+         
             <div className="About--content">
                 <img src={aImg} alt="" />
                 <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
@@ -21,7 +21,7 @@ export default function About(){
                 <Link to="/vans">Explore your vans</Link>
 
             </div>
-            <Footer/>
+           
         </div>
     )
 }

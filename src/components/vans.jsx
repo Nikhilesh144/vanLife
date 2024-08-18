@@ -17,7 +17,7 @@ export default function Vans(){
       
     return(
         <div>
-            <Navbar/>
+        
             <div className="van-content">
                 <h1>
                   Explore our van options
@@ -47,7 +47,7 @@ export default function Vans(){
                 )
             })}
              </div>
-             <Footer/>
+         
         </div>
         
     )

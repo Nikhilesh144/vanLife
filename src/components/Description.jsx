@@ -15,7 +15,7 @@ export default function Description()
 
     return(
         <>
-            <Navbar/>
+          
            {details? <div className="van-desc">
             <Link className="back" to="/vans"> Back to all vans</Link>
            
@@ -30,7 +30,7 @@ export default function Description()
                     <Link className="rent-button">Rent This Van</Link>
             </div> :<h2>...Loading</h2>}
 
-            <Footer/>
+          
         </>
     )
 }
