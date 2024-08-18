@@ -16,18 +16,18 @@ export default function Vans(){
     
       
     return(
-        <div>
+        <div >
         
             <div className="van-content">
                 <h1>
                   Explore our van options
                 </h1>
-                <ul>
+                {/* <ul>
                     <li>Simple</li>
                     <li>Luxury</li>
                     <li>Rugged</li>
                     <li>clear filters</li>
-                </ul>
+                </ul> */}
             </div>
             <div className=" vans-list">
        { vans.map(van=>{

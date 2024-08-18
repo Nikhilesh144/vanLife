@@ -9,7 +9,7 @@ export default function  VanItem(props){
             <img src={props.image}alt="" />
             <div className="van-details">
               <div>
-                 <h3 className="van-name">{props.name}</h3>
+                 <h4 className="van-name">{props.name}</h4>
                  <p className={`van-type ${props.type} ` }> {props.type}</p>
              </div>
             <div className="van-pricing">
