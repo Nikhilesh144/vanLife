@@ -13,7 +13,16 @@
   background-color: #FFF7ED;
   height: 60px;
 
-
+.styled{
+  text-decoration: underline;
+  font-weight: 700;
+  color: #000000;
+}
+links.a.styled{
+  text-decoration: underline;
+  font-weight: 700;
+  color: #000000;
+}
   
 }
 .Navbar a{
@@ -293,3 +302,126 @@ html, body {
   color: #161616;
   text-decoration: underline;
 }
+/*Host Dashboard*/
+.Dashboard-welcome{
+  background-color: #FFEAD0;
+  height: 219px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Dashboard-child1{
+  padding: 20px 20px;
+}
+.Dashboard-child1 span{
+  text-decoration: underline;
+}
+.Dashboard-child2{
+  padding: 20px 20px;height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFDDB2;
+
+}
+.details1{
+  margin-left: 40px;
+
+}
+.details{
+  margin-right: 20px;
+  cursor: pointer;
+}
+.host-vanslist{
+  display: grid;
+  grid-template-columns: auto 75px;
+  grid-template-areas: 'my my';
+  margin-left: 20px;
+
+}
+.host-vanslist >p{
+
+  font-weight:bolder;
+
+}
+.child{
+  grid-area: 'my';
+  margin: 10px;
+  border: #000000 1px solid;
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  grid-column-gap: 1px;
+
+  
+}
+.child img{
+  height: 70px;
+  width: 70px;
+}
+/* hostvan list  */
+.hostVanList{
+  /* border: #000000 solid 1px; */
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 40px;
+  gap: 40px;
+  margin-bottom: 10px;
+
+}
+.hostVanList img{
+  height: 80px;
+  width: 80px;
+  border-radius:5px ;
+  
+}
+.HvanLink{
+  text-decoration: none;
+  color: #000000;
+}
+.Hvans{
+  padding: 20px 20px;
+}
+.Hvans h1{
+  padding: 0px 20px;
+}
+.HvanDetails{
+ background-color: #FFFFFF;
+ border-radius: 5px;
+ display: flex;
+ padding: 30px 30px;
+ gap:30px;
+ margin-top: 40px;
+}
+.HvanDetails img{
+  border-radius: 5px; 
+  height: 160px;
+  width: 160px;
+}
+.HvanDetails p{
+  color: #FFFFFF;
+  width: 60px;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.HvanDesc-container{
+  padding: 20px;
+}
+.hostVanDetails a{
+  text-decoration: none;
+  color: #161616;
+  margin-right: 20px;
+}
+.hostVanDetails a:hover{
+  text-decoration: underline;
+
+  
+}
+.hostVanDetails a:active{
+  text-decoration: underline;
+  
+}
+
