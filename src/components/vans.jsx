@@ -44,10 +44,10 @@ export default function Vans(){
                   Explore our van options
                 </h1>
               <div className="filters">
-                <Link to="?type=simple">simple</Link>
-                <Link to="?type=luxury" >Luxury</Link>
-                <Link to="?type=rugged" >Rugged</Link>
-                <Link to=".">clear filters</Link>
+                <Link className={`van simple ${typeFilter==="simple"?"selected":null}`}    to="?type=simple">simple</Link>
+                <Link className={`van luxury ${typeFilter==="luxury"?"selected":null}`}    to="?type=luxury" >Luxury</Link>
+                <Link  className={`van rugged ${typeFilter==="rugged"?"selected":null}`}    to="?type=rugged" >Rugged</Link>
+               { typeFilter? <Link   className={""}   to=".">clear</Link>:null}
               </div>
             </div>
             <div className=" vans-list">

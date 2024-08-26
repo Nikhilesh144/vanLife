@@ -157,16 +157,17 @@ html, body {
  }
 .filters{
   padding: 20px;
+  border: #000000 solid 1px;
 
 }
 .filters a{
   text-decoration: none;
   margin: 10px;
-  color: #000000;
+  color: #ffffff;
   font-weight: 700;
-  background-color: #FFCC8D;
+  background-color: #b9b8b7;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
 }
  .vans-list{
   /* border: 1px rgb(0, 0, 0) solid; */
@@ -230,6 +231,25 @@ html, body {
 }
 .van-type.rugged {
   background-color:#115E59;
+}
+
+.van.simple.selected{
+  background-color: #E17654;
+}
+.van.luxury.selected{
+  background-color: #000000;
+}
+.van.rugged.selected{
+  background-color: #115E59;
+}
+.van.simple:hover{
+  background-color: #E17654;
+}
+.van.luxury:hover{
+  background-color: #000000;
+}
+.van.rugged:hover{
+  background-color: #115E59;
 }
 /* description/ */
 .van-desc{
