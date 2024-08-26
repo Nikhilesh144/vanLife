@@ -157,7 +157,7 @@ html, body {
  }
 .filters{
   padding: 20px;
-  border: #000000 solid 1px;
+  /* border: #000000 solid 1px; */
 
 }
 .filters a{
