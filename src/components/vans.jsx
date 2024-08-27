@@ -23,7 +23,7 @@ export default function Vans(){
         return(
            
           <Link    aria-label={`View details for ${van.name}, 
-          priced at $${van.price} per day`} to={`/vans/${van.id}`}>
+          priced at $${van.price} per day`} to={`${van.id}`} state={ {search:searchParams.toString()} }>
             <VanItem 
              key={van.id} 
              name={van.name}

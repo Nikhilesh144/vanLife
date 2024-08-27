@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import { useState,useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams ,useLocation } from "react-router-dom";
 import img from  "./images/Arrow 1.png"
 import Footer from "./Footer";
 export default function Description()
@@ -12,12 +12,15 @@ export default function Description()
     React.useEffect(()=>{
         fetch(`/api/vans/${params.id}`).then(res=>res.json()).then(data=>setDetails(data.vans))
     },[])
+    const location =useLocation()
+    const search=location.state?.search||"";
+    const backButton= location.state?.search ?`back to ${location.state.search.split("=")[1 ]}  vans`:"back to all vans" 
 
     return(
         <>
           
            {details? <div className="van-desc">
-            <Link className="back" to="/vans"> Back to all vans</Link>
+            <Link className="back"  to={`..?${search}`} relative="path"> {backButton}</Link>
            
             <img src={details.imageUrl} alt="" />
             <p className={`van-type ${details.type}`}> {details.type}</p>
