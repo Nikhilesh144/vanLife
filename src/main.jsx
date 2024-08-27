@@ -18,6 +18,7 @@ import HostVanDetails from './components/host/HostVanDetails.jsx'
 import HostDetails from './components/host/HostDetails.jsx'
 import HostPricing from './components/host/HostPricing.jsx'
 import HostPhotos from './components/host/HostPhotos.jsx'
+import NotFound from './components/NotFound.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -28,6 +29,7 @@ createRoot(document.getElementById('root')).render(
       <Route  path="about" element={ <About />} />
       <Route  path="vans" element={ <Vans  />}/> 
       <Route  path='vans/:id' element={<Description />}/>
+      <Route path='*' element={<NotFound/>}/>
       <Route path='host'   element={<HostLayout/>}>
       {/* <Route path='/host' element={<Host />} */}
       <Route  index element={<Host />}/>
