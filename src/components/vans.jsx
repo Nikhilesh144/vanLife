@@ -4,20 +4,40 @@ import bg from "./images/homeBG.png";
 import { useEffect,useState } from "react";
 import VanItem from "./VanItem";
 import Footer from "./Footer";
-import { Link  } from "react-router-dom";
-import { useSearchParams } from "react-router-dom";
-export default function Vans(){
+import { Link, renderMatches  } from "react-router-dom";
+import { useSearchParams ,useLoaderData } from "react-router-dom";
+import { callVans } from "../api";
 
-    const [vans,setVans]=React.useState([]);
-    React.useEffect(() => {
-        fetch("/api/vans")
-            .then(res => res.json())
-            .then(data => setVans(data.vans))
-    }, [])
+ export function loader(){
+  return callVans()
+}
+export default function Vans(){
+                           
+    // const [vans,setVans]=React.useState([]);
+    const [loader,setLoader]=React.useState(false)
+    const[error,setError]=React.useState(null)
+    const vans=useLoaderData()
+    
+
+    // React.useEffect(() => {
+    //   setLoader(true)
+    //   async function loadvans() {
+    //     try{
+    //       const data= await  callVans();
+    //       setVans(data)
+    //     }
+    //     catch(err){
+    //       setError(err)
+    //     }
+    //     finally{
+    //       setLoader(false)
+    //     }
+    //   }
+    //   loadvans()
+    // }, [])
     
       const[searchParams,setSearchParams]=useSearchParams()
       const typeFilter=searchParams.get("type")
-      console.log(typeFilter)
       const displayedVans=typeFilter?vans.filter((van)=>van.type===typeFilter):vans
       const vansarr= displayedVans.map(van=>{
         return(
@@ -36,6 +56,15 @@ export default function Vans(){
         )
     })
 
+    if(loader){
+      return <h1 aria-live="polite">...Loading</h1>
+      
+    }
+    if(error){
+      return(
+        <h1 aria-live="assertive">{error.message}</h1>
+      )
+    }
     return(
         <div >
         

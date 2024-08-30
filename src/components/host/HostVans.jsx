@@ -30,13 +30,13 @@ export default function HostVans(){
     return(
         <>
                 
-        { hostVans?
+        {
         <div className="Hvans">
              <h1> your listed vans</h1>    
             
             {vanElement}
         </div>
-        :(<h1>Loading...</h1>)
+        
         }
         </>
     )

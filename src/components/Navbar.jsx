@@ -12,6 +12,7 @@ export default function Navbar(){
           <NavLink className={({isActive})=>isActive?"styled":null} to="/host">Host</NavLink>
           <NavLink className={({isActive})=>isActive?"styled":null} to="/about">About</NavLink>
           <NavLink className={({isActive})=>isActive?"styled":null} to="/vans">Vans</NavLink>
+          <i className="fa-regular fa-circle-user"></i>
           </div>
           
 

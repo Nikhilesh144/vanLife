@@ -107,6 +107,7 @@ html, body {
   color:#AAAAAA;
  text-align: center;
  padding:10px 40px ;
+ margin-top: 150px;
 
 }
 .About--content img{
@@ -450,4 +451,35 @@ html, body {
   font-weight: 700;
   padding: 5px;
 }
-
+/* login page */
+.Login{
+  padding: 80px;
+}
+.Login h2{
+  padding: 10px 30px;
+}
+.Login input{
+  /* background-color: #115E59; */
+  display: block;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 20px;
+  border: gray solid 1px;
+}
+.Login button{
+  display: block;
+  width: 320px;
+   padding: 15px; 
+   background-color: #FF8C38;
+   color: #FFFFFF;
+   font-weight: 600;
+   border: none;
+   border-radius: 5px;
+   margin-top: 20px;
+  
+}
+.Login span{
+  font-weight: 700;
+  color: #FF8C38;
+}
