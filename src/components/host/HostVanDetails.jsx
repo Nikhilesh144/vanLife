@@ -1,14 +1,22 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { NavLink,Link , Outlet} from "react-router-dom";
+import { NavLink,Link , Outlet,useLoaderData} from "react-router-dom";
+import { authRequired, hostVans } from "../../api";
+
+export function loader({params}){
+    authRequired()
+    return hostVans(params.id)
+}
+
 export default function HostVanDetails(){
-    const[van,setVan]=React.useState({})
+    const van=useLoaderData()[0]
+    
     const params=useParams();
-    React.useEffect(()=>{
-            fetch(`/api/host/vans/${params.id}`)
-            .then(res=>res.json())
-            .then(data=>setVan(data.vans[0]))
-    },[])
+    // React.useEffect(()=>{
+    //         fetch(`/api/host/vans/${params.id}`)
+    //         .then(res=>res.json())
+    //         .then(data=>setVan(data.vans[0]))
+    // },[])
     const activeStyles = {
         fontWeight: "bold",
         textDecoration: "underline",
@@ -40,7 +48,7 @@ export default function HostVanDetails(){
            style={({ isActive }) => isActive ? activeStyles : null}
             to="photos">Photos</NavLink>
         </div>
-            <Outlet context={[van,setVan]}/>
+            <Outlet context={[van]}/>
             </div>
            
     )

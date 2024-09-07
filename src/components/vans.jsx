@@ -6,7 +6,7 @@ import VanItem from "./VanItem";
 import Footer from "./Footer";
 import { Link, renderMatches  } from "react-router-dom";
 import { useSearchParams ,useLoaderData } from "react-router-dom";
-import { callVans } from "../api";
+import { callVans, hostVans } from "../api";
 
  export function loader(){
   return callVans()

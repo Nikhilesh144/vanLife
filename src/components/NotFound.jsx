@@ -3,7 +3,7 @@ import{Link } from "react-router-dom";
 export default function NotFound(){
     const style={
         height:"200px"
-    }
+                 }
     return(
     <div className="Not-Found" >
         <h1>

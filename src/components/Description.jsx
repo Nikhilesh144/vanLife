@@ -1,17 +1,23 @@
 import React from "react";
 import Navbar from "./Navbar";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { useState,useEffect } from "react";
 import { useParams ,useLocation } from "react-router-dom";
 import img from  "./images/Arrow 1.png"
 import Footer from "./Footer";
+import { callVans, hostVans } from "../api";
+
+export function loader({params}){
+
+    return callVans(params.id)
+}
 export default function Description()
 {
     const params=useParams()
-   const[details,setDetails]=React.useState({});
-    React.useEffect(()=>{
-        fetch(`/api/vans/${params.id}`).then(res=>res.json()).then(data=>setDetails(data.vans))
-    },[])
+   const details=useLoaderData();
+    // React.useEffect(()=>{
+    //     fetch(`/api/vans/${params.id}`).then(res=>res.json()).then(data=>setDetails(data.vans))
+    // },[])
     const location =useLocation()
     const search=location.state?.search||"";
     const backButton= location.state?.search ?`back to ${location.state.search.split("=")[1 ]}  vans`:"back to all vans" 

@@ -483,3 +483,7 @@ html, body {
   font-weight: 700;
   color: #FF8C38;
 }
+.red{
+  color: red;
+  padding-left: 90px;
+}
