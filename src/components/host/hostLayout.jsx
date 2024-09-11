@@ -4,8 +4,8 @@ import Navbar2 from "./Navbar2";
 import { authRequired } from "../../api";
 
 export async function loader(){
-     const a=   await authRequired()
-     return a;
+     const a=  authRequired()
+     return null;
 
 }
 export default function HostLayout(){

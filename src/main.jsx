@@ -20,7 +20,7 @@ import HostPricing from './components/host/HostPricing.jsx'
 import HostPhotos from './components/host/HostPhotos.jsx'
 import NotFound from './components/NotFound.jsx'
 import Error from './components/Error.jsx'
-import Login,{loader as loginLoader} from './components/host/Login.jsx'
+import Login,{loader as loginLoader,action} from './components/host/Login.jsx'
 
 const router=createBrowserRouter(createRoutesFromElements(
   <Route  path="/" element={<Layout/>}>
@@ -28,7 +28,7 @@ const router=createBrowserRouter(createRoutesFromElements(
    <Route  path="about" element={ <About />} />
   <Route  path="vans" element={ <Vans  />} errorElement={<Error />} loader={vansLoader}/> 
   <Route  path='vans/:id' element={<Description />} loader={vdl}/>
-  <Route path='login' element={<Login/>} loader={loginLoader}/>
+  <Route path='login' element={<Login/>} loader={loginLoader} action={action}/>
   <Route path='*' element={<NotFound/>}/>
   <Route path='host'   element={<HostLayout/>} loader={hostLoader}>
   {/* <Route path='/host' element={<Host />} */}

@@ -5,12 +5,13 @@ import { authRequired, hostVans } from "../../api";
 
 export function loader({params}){
     authRequired()
-    return hostVans(params.id)
+    return   ( hostVans(params.id))
+ 
 }
 
 export default function HostVanDetails(){
-    const van=useLoaderData()[0]
-    
+    const van=useLoaderData()
+    console.log (van)
     const params=useParams();
     // React.useEffect(()=>{
     //         fetch(`/api/host/vans/${params.id}`)

@@ -487,3 +487,7 @@ html, body {
   color: red;
   padding-left: 90px;
 }
+.loader{
+  padding: 40px;
+  width: 300px;
+}
