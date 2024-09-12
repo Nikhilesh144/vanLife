@@ -74,6 +74,9 @@ export default function Login(){
              </Form>
           
             <p>Don't have an account? <span> create one now</span></p>
+            <img src="https://cdn.pixabay.com/photo/2022/07/31/20/32/volkswagen-7356817_1280.jpg" alt="" />
+            <img src="https://media.istockphoto.com/id/1477517854/photo/group-of-friends-exploring-forest-during-vacation.jpg?s=1024x1024&w=is&k=20&c=IUOZhMUij04qYtdHJA5haMDbg7iS2IhUBMwJn5JZKqA=" alt="" />
         </div>
+        
     )
 }

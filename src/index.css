@@ -502,6 +502,12 @@ justify-content: center;
 .Login{
   padding: 80px 40px;
 }
+.Login img{
+  width: 300px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
 .Login h2{
   padding: 10px 30px;
 }
