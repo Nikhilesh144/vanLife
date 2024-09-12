@@ -15,8 +15,8 @@ import { callVans, hostVans } from "../api";
 export default function Vans(){
                            
     // const [vans,setVans]=React.useState([]);
-    const [loader,setLoader]=React.useState(false)
-    const[error,setError]=React.useState(null)
+    // const [loader,setLoader]=React.useState(false)
+    // const[error,setError]=React.useState(null)
     const vansPromise=useLoaderData()
     const[searchParams,setSearchParams]=useSearchParams()
     const typeFilter=searchParams.get("type")
@@ -44,15 +44,15 @@ export default function Vans(){
   
 
 
-    if(loader){
-      return <h1 aria-live="polite">...Loading</h1>
+    // if(loader){
+    //   return <h1 aria-live="polite">...Loading</h1>
       
-    }
-    if(error){
-      return(
-        <h1 aria-live="assertive">{error.message}</h1>
-      )
-    }
+    // }
+    // if(error){
+    //   return(
+    //     <h1 aria-live="assertive">{error.message}</h1>
+    //   )
+    // }
     return(
         <div >
         

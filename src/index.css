@@ -322,6 +322,11 @@ html, body {
 .Dashboard-child1 span{
   text-decoration: underline;
 }
+.fa-solid.fa-star{
+  color: #FF8C38;
+  padding: 2px;
+  
+}
 .Dashboard-child2{
   padding: 20px 20px;height: 60px;
   display: flex;
@@ -332,39 +337,61 @@ html, body {
 }
 .details1{
   margin-left: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
 
 }
 .details{
   margin-right: 20px;
   cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
 }
 .host-vanslist{
   display: grid;
   grid-template-columns: auto 75px;
   grid-template-areas: 'my my';
   margin-left: 20px;
+  
 
 }
-.host-vanslist >p{
+.host-vanslist  a{
 
   font-weight:bolder;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+
 
 }
 .child{
-  grid-area: 'my';
-  margin: 10px;
-  border: #000000 1px solid;
-  grid-column: 1 / 2;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-between;
-  grid-column-gap: 1px;
+  display: flex;
+  gap: 90px ;
+  background-color: #a1ccc9;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 2px;
 
   
 }
 .child img{
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
+  
+  border-radius: 10px;
+  border: #000000 solid 1px;
+  margin-top: 15px;
+  margin-left:20px ;
+
+  
+}
+.parent{
+  
+  padding: 25px;
 }
 /* hostvan list  */
 .hostVanList{
@@ -491,3 +518,4 @@ html, body {
   padding: 40px;
   width: 300px;
 }
+

@@ -1,8 +1,21 @@
 import React from "react";
 import bg from "../images/homeBG.png"
+import {hostVans}   from "../../api.js"
+import { defer,Await,useLoaderData, Link } from "react-router-dom";
+
+export function loader(){
+    const vans=hostVans()
+    return defer({vans})
+
+
+
+}
+
 export default function Host(){
+    const vanspromise=useLoaderData()
     return(
         <>
+        
         <div className="Dashboard-welcome">
         <div className="Dashboard-child1" >
             <h2>
@@ -15,39 +28,61 @@ export default function Host(){
 
         </div>
         <div>
-        <h4 className="details"> Details</h4>
+        <Link className="details" to="income"> Details</Link>
         </div>
       
         </div>
         <div className="Dashboard-child2" >
             <h3>
-            Review score  5.0/5
+            Review score   <i className="fa-solid fa-star"></i>5.0/5
                 
             </h3>
             <div>
-          <h4 className="details1"> Details</h4>
+          <Link className="details1" to="reviews"> Details</Link>
           </div>
         </div>
         <div className="host-vanslist">
             <h2 >your listed vans</h2>
-            <p>View all</p>
-            <div className="child">
-                <img src={bg} alt="" />
-                <div>
-                <h4>modest explorer</h4>
-                <h5>$60/day</h5>
-                </div>
-               <div>
-                <h4>Edit</h4>
-               </div>
-            </div>
-             <div className="child" >
-             <img src={bg} alt="" />
-          
-             </div>
+            <Link to="vans">View all</Link>
+        
     
             
         </div>
+                   <div className="parent">
+                <React.Suspense fallback={<h3>Fetching data..</h3>}>
+                <Await resolve={vanspromise.vans}>
+                    {(vans)=>{  
+                        
+                        const arr=vans.map(item=>{
+                            return(
+                                <div className="child">
+                                <img src={item.imageUrl} alt="" />
+                                <div>
+                                <h4>{item.name}</h4>
+                                <h5>{item.price}$/day</h5>
+                                </div>
+                               <div>
+                              
+                               </div>
+                            </div>
+                            )
+                        })
+                        return(
+                            <>
+                            {arr}
+                            </>
+                        )
+
+                    }
+                    
+                    }
+
+
+                </Await>
+                </React.Suspense>
+                </div> 
+              
+           
           
         </>
     )

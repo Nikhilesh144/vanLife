@@ -13,8 +13,8 @@ export async function action( {request}){
      try{ 
     const login= await loginUser({email,password})
             localStorage.setItem('loggedIn',true)
-
-       return  window.location.replace("/host")
+            window.location.replace("/host")
+       return  null
      }
      catch(err){
         return err;

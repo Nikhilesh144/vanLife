@@ -11,7 +11,7 @@ export function loader({params}){
 
 export default function HostVanDetails(){
     const van=useLoaderData()
-    console.log (van)
+    // console.log (van)
     const params=useParams();
     // React.useEffect(()=>{
     //         fetch(`/api/host/vans/${params.id}`)

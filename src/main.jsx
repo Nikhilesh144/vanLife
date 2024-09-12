@@ -9,7 +9,7 @@ import Vans,{loader, loader as vansLoader}  from './components/vans.jsx'
 import '../server.js';
 import Description ,{loader as vdl} from './components/Description.jsx'
 import Layout from './components/Layout.jsx'
-import Host from './components/host/Host.jsx'
+import Host,{loader as hLoader} from './components/host/Host.jsx'
 import Income from './components/host/Income.jsx'
 import Reviews from './components/host/Reviews.jsx'
 import HostLayout ,{loader  as hostLoader} from './components/host/hostLayout.jsx'
@@ -32,7 +32,7 @@ const router=createBrowserRouter(createRoutesFromElements(
   <Route path='*' element={<NotFound/>}/>
   <Route path='host'   element={<HostLayout/>} loader={hostLoader}>
   {/* <Route path='/host' element={<Host />} */}
-     <Route  index element={<Host />}/>
+     <Route  index element={<Host />} errorElement={<Error/>} loader={hLoader}/>
      <Route  path='income' element={<Income />}/>
      <Route path='vans'element={<HostVans/>} loader={hvl} />
        <Route path='vans/:id'element={<HostVanDetails/> }loader={hvd} >
